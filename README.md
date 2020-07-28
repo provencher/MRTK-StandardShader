@@ -3,6 +3,8 @@ Standalone version of MRTK Standard Shader
 
 This repo is a mirror of the bare minimum extracted components to fully utilize the MRTK Standard Shader without needing to include all of MRTK.
 
+**Tested setup:** Unity 2019.4 LTS, though it should work with older or newer versions.
+
 # MixedRealityToolkit/Standard shader
 
 The MixedRealityToolkit/Standard shader is a collection of shading techniques for mimicking [**Microsoft's Fluent Design System**](https://fluent.microsoft.com/) within Unity 3D.
@@ -39,6 +41,9 @@ For clip primitive examples, open **Scenes\ClippingExamples.unity**.
 
 Only one light source is supported, the directional light (additional light can be achieved using lightmapping).
 If you already using MRTK, then this package is not needed for your project.
+
+Note this shader is designed to work with the default built-in renderer. 
+MRTK includes an upgrade script that should allow it to work with URP, though certain features that rely on the depth buffer like stencils and outlines will not work until that is properly supported on URP.
 
 ## Download
 
